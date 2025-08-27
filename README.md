@@ -19,6 +19,9 @@
 
 # 说明
 - Kotlin前端, Python后端, MySQL数据库
+- mforum_backend为python代码
+- MySQL.env为MySQL环境创建的命令
+- 直接创建一个kotlin项目, 将app文件覆盖, 根目录的gradle也直接覆盖
 
 # 🤔 做什么? 如何让自己在以后的work中更加方便
 - 视频 / 文本的AI教学
