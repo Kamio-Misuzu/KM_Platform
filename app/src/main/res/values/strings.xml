@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">KM_Platform</string>
+    <string name="title_home">主页</string>
+    <string name="title_forum">论坛</string>
+    <string name="title_mine">我的</string>
+    <string name="title_setting">设置</string>
+
+    <string name="just_now">刚刚</string>
+    <string name="yesterday">昨天</string>
+    <plurals name="minutes_ago">
+        <item quantity="one">1分钟前</item>
+        <item quantity="other">%d分钟前</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="one">1小时前</item>
+        <item quantity="other">%d小时前</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="one">1天前</item>
+        <item quantity="other">%d天前</item>
+    </plurals>
+
+    <string name="video_ai_teaching">视频AI教学</string>
+    <string name="text_ai_teaching">文本AI教学</string>
+
+    <string name="share">分享</string>
+    <string name="add_to_favorites">添加到收藏</string>
+    <string name="remove_from_favorites">从收藏中移除</string>
+    <string name="play_video">播放视频</string>
+    <string name="related_videos">相关视频</string>
+    <string name="no_video_resources">暂无视频教学资源</string>
+    <string name="no_text_resources">暂无文本教学资源</string>
+    <string name="video_thumbnail">视频缩略图</string>
+    <string name="beginner">初级</string>
+    <string name="intermediate">中级</string>
+    <string name="advanced">高级</string>
+    <string name="loading_arxiv">加载Arxiv Daily内容中…</string>
+    <string name="arxiv_load_error">加载Arxiv内容失败，请检查网络连接</string>
+
+    <string name="translation_method">翻译方法</string>
+    <string-array name="translation_methods">
+        <item>硅基流动API</item>
+        <item>有道翻译</item>
+    </string-array>
+
+    <string name="translating">翻译中…</string>
+    <string name="translation_failed">翻译失败</string>
+
+    <string name="select_category">选择类别</string>
+    <string name="select_count">选择数量</string>
+    <string name="fetch_papers">获取论文</string>
+    <string name="translate">翻译</string>
+    <string name="no_papers_found">未找到相关论文</string>
+    <string name="arxiv_daily">Arxiv Daily</string>
+
+    <string-array name="target_languages">
+        <item>中文</item>
+        <item>中文繁体</item>
+        <item>日文</item>
+    </string-array>
+
+    <string name="word_learning">随机单词</string>
+</resources>

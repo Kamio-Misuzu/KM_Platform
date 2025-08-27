@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+
+                    <TextView
+                            android:id="@+id/tvWord"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:text="word"/>
+
+
+                    <ImageButton
+                            android:id="@+id/btnSoundUs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_volume_us"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="美式发音"/>
+
+                    <ImageButton
+                            android:id="@+id/btnSoundUk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_volume_uk"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="英式发音"/>
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/tvPhonetic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:text="phonetic"
+                        android:layout_marginBottom="16dp"/>
+
+                <TextView
+                        android:id="@+id/tvTranslation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="translation"
+                        android:layout_marginBottom="16dp"/>
+
+                <TextView
+                        android:id="@+id/tvRelatedWords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="相关词汇"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"/>
+
+                <TextView
+                        android:id="@+id/tvPhrases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="短语"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"/>
+
+                <TextView
+                        android:id="@+id/tvExamples"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="例句"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btnSaveWord"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="保存单词"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btnOpenFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="打开保存目录"
+                    android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnNextWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="下一个单词"
+                android:textAllCaps="false"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

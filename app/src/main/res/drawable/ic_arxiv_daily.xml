@@ -1,0 +1,64 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24"
+        android:tint="?attr/colorOnSurface">
+
+    <!-- 论文外框（带折角） -->
+    <path
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.5"
+            android:pathData="M4,3h12l4,4v14H4z" />
+    <!-- 折角填充 -->
+    <path
+            android:fillColor="@android:color/white"
+            android:pathData="M16,3v4h4z" />
+
+    <!-- 论文里的几行“文字” -->
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.6"
+            android:strokeLineCap="round"
+            android:pathData="M6,9h6" />
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.6"
+            android:strokeLineCap="round"
+            android:pathData="M6,12h7" />
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.6"
+            android:strokeLineCap="round"
+            android:pathData="M6,15h5" />
+
+    <!-- 右侧：简化神经网络（连线） -->
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:pathData="M14.5,10.5 L17.5,8.5" />
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:pathData="M14.5,10.5 L18.5,12" />
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:pathData="M14.5,10.5 L17.5,14.5" />
+    <path
+            android:strokeColor="@android:color/white"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:pathData="M18.5,12 L17.5,14.5" />
+
+    <!-- 右侧：节点（用小方块表示） -->
+    <path android:fillColor="@android:color/white" android:pathData="M14.1,10.1h0.8v0.8h-0.8z" />
+    <path android:fillColor="@android:color/white" android:pathData="M17.1,8.1h0.8v0.8h-0.8z" />
+    <path android:fillColor="@android:color/white" android:pathData="M18.1,11.6h0.8v0.8h-0.8z" />
+    <path android:fillColor="@android:color/white" android:pathData="M17.1,14.1h0.8v0.8h-0.8z" />
+
+</vector>

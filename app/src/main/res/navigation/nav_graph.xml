@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/navigation_home">
+
+    <!-- 主页 -->
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.example.mforum.ui.home.HomeFragment"
+            android:label="@string/title_home"
+            tools:layout="@layout/fragment_home">
+
+        <action
+                android:id="@+id/action_homeFragment_to_settingsFragment"
+                app:destination="@id/navigation_Api_settings" />
+
+        <action
+                android:id="@+id/action_homeFragment_to_arxivDailyFragment"
+                app:destination="@id/arxivDailyFragment" />
+
+        <action
+                android:id="@+id/action_homeFragment_to_navigation_video_ai"
+                app:destination="@id/navigation_video_ai" />
+
+        <action
+                android:id="@+id/action_homeFragment_to_navigation_text_ai"
+                app:destination="@id/navigation_text_ai" />
+
+        <action
+                android:id="@+id/action_homeFragment_to_wordLearningFragment"
+                app:destination="@id/wordLearningFragment" />
+    </fragment>
+
+    <!-- Video AI 页面 -->
+    <fragment
+            android:id="@+id/navigation_video_ai"
+            android:name="com.example.mforum.ui.teaching.VideoAIFragment"
+            android:label="视频AI教学"
+            tools:layout="@layout/fragment_video_ai">
+
+        <action
+                android:id="@+id/action_navigation_video_ai_to_videoDetailFragment"
+                app:destination="@id/videoDetailFragment" />
+    </fragment>
+
+    <!-- Video 详情 -->
+    <fragment
+            android:id="@+id/videoDetailFragment"
+            android:name="com.example.mforum.ui.teaching.VideoDetailFragment"
+            android:label="视频详情"
+            tools:layout="@layout/fragment_video_detail">
+
+        <argument
+                android:name="resourceId"
+                app:argType="integer"
+                android:defaultValue="0" />
+
+        <action
+                android:id="@+id/action_videoDetailFragment_self"
+                app:destination="@id/videoDetailFragment" />
+    </fragment>
+
+    <!-- Text AI 页面 -->
+    <fragment
+            android:id="@+id/navigation_text_ai"
+            android:name="com.example.mforum.ui.teaching.TextAIFragment"
+            android:label="文本AI教学"
+            tools:layout="@layout/fragment_text_ai" />
+
+    <!-- 论文每日更新 -->
+    <fragment
+            android:id="@+id/arxivDailyFragment"
+            android:name="com.example.mforum.ui.Arxiv_Daily.ArxivDailyFragment"
+            android:label="Arxiv Daily"
+            tools:layout="@layout/fragment_arxiv_daily">
+
+        <action
+                android:id="@+id/action_arxivDailyFragment_to_paperDetailFragment"
+                app:destination="@id/paperDetailFragment" />
+    </fragment>
+
+    <!-- 论文详情 -->
+    <fragment
+            android:id="@+id/paperDetailFragment"
+            android:name="com.example.mforum.ui.Arxiv_Daily.PaperDetailFragment"
+            android:label="Paper Details"
+            tools:layout="@layout/fragment_paper_detail">
+
+        <argument
+                android:name="paper"
+                app:argType="com.example.mforum.data.ArxivPaper" />
+
+        <action
+                android:id="@+id/action_paperDetailFragment_to_settingsFragment"
+                app:destination="@id/navigation_Api_settings" />
+    </fragment>
+
+    <!-- 论坛相关页面 -->
+    <fragment
+            android:id="@+id/navigation_forum"
+            android:name="com.example.mforum.ui.forum.ForumFragment"
+            android:label="@string/title_forum"
+            tools:layout="@layout/fragment_forum">
+
+        <action
+                android:id="@+id/action_forumFragment_to_postDetailFragment"
+                app:destination="@id/postDetailFragment" />
+
+        <action
+                android:id="@+id/action_forumFragment_to_createPostFragment"
+                app:destination="@id/createPostFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/postDetailFragment"
+            android:name="com.example.mforum.ui.forum.PostDetailFragment"
+            android:label="帖子详情"
+            tools:layout="@layout/fragment_post_detail">
+
+        <argument
+                android:name="postId"
+                app:argType="integer" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/createPostFragment"
+            android:name="com.example.mforum.ui.forum.CreatePostFragment"
+            android:label="创建帖子"
+            tools:layout="@layout/fragment_create_post" />
+
+    <!-- 设置页面 -->
+    <fragment
+            android:id="@+id/navigation_Api_settings"
+            android:name="com.example.mforum.ui.Arxiv_Daily.API_SettingsFragment"
+            android:label="设置"
+            tools:layout="@layout/fragment_api_settings" />
+
+    <!-- 我的页面 -->
+    <fragment
+            android:id="@+id/navigation_mine"
+            android:name="com.example.mforum.ui.mine.MineFragment"
+            android:label="@string/title_mine"
+            tools:layout="@layout/fragment_mine">
+
+        <action
+                android:id="@+id/action_Mine_to_setting"
+                app:destination="@id/navigation_settings" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_settings"
+            android:name="com.example.mforum.ui.setting.SettingFragment"
+            android:label="设置"
+            tools:layout="@layout/setting" />
+
+    <fragment
+            android:id="@+id/wordLearningFragment"
+            android:name="com.example.mforum.ui.Word.WordLearningFragment"
+            android:label="随机单词"
+            tools:layout="@layout/fragment_word_learning" />
+
+</navigation>
