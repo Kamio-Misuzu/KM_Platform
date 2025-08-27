@@ -22,6 +22,13 @@
 - mforum_backend为python代码
 - MySQL.env为MySQL环境创建的命令
 - 直接创建一个kotlin项目, 将app文件覆盖, 根目录的gradle也直接覆盖
+- 论坛和登录暂时用不了, 因为还没有租服务器
+
+# 正在建设
+- 训练仪表盘: 监控到模型的训练过程(类似于接入Weights & Biases的后台)
+- 
+
+
 
 # 🤔 做什么? 如何让自己在以后的work中更加方便
 - 视频 / 文本的AI教学
