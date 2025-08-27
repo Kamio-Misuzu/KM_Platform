@@ -1,4 +1,3 @@
-// ArxivParser.kt
 package com.example.mforum.utils
 
 import com.example.mforum.data.ArxivPaper
@@ -85,4 +84,5 @@ object ArxivParser {
         }
         return papers
     }
+
 }
