@@ -1,3 +1,15 @@
+<div align="center">
+  <h1>🔥 KM_Platform</h1>
+  <div>
+    <a >English</a> | 
+    <a >简体中文</a> 
+  </div>
+  <p>
+    <img src="https://img.shields.io/github/stars/Kamio-Misuzu/KM_Platform?style=social" alt="stars">
+    <img src="https://img.shields.io/github/forks/Kamio-Misuzu/KM_Platform?style=social" alt="forks">
+  </p>
+</div>
+
 # 💫 Timeline
 - 8.25 实现Arxiv Daily获取论文以及进行摘要翻译
 - 8.22-8.24 采用Kotlin前端, python后端与MySQL数据库完成登录 / 退出, 创建帖子和评论的功能, 能够实现在手机上APP与Python提供的API连接
