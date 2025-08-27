@@ -1,4 +1,3 @@
-// ArxivApiService.kt
 package com.example.mforum.network
 
 import com.example.mforum.data.ArxivPaper
@@ -12,4 +11,5 @@ interface ArxivApiService {
         @Query("start") start: Int = 0,
         @Query("max_results") maxResults: Int = 25
     ): io.ktor.client.statement.HttpResponse
+
 }
